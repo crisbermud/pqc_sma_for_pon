@@ -1,0 +1,23 @@
+[package]
+name = "pqc_pon"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bincode = "2.0.0-rc.3"
+cpu-time = "^1.0"
+ed25519-dalek = "^2.0.0-rc.2"
+hmac = "^0.12"
+num-derive = "^0.3"
+num-traits = "^0.2"
+pqc_kyber = {version = "^0.6", features = ["kyber512"]}
+rand = "^0.8"
+rand_core = "^0.6"
+rust-fsm = "^0.6"
+serde =  {version = "^1.0", features = ["derive"]}
+serde_bare = "^0.5"
+sha2 = "^0.10"
+x25519-dalek = {version = "^2.0.0-pre.1", features = ["reusable_secrets"] }
+quantogram = "^0.4"
